@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/w3.css">
     <link rel="stylesheet" href="assets/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/79a1ae70d5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/main.css">
     <style>
       body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
@@ -18,26 +18,27 @@
   <body class="w3-light-grey w3-content" style="max-width:1600px">
 
     <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+      style="z-index:3;width:300px;font-weight:bold" id="mySidebar" onclick="w3_close()"><br>
       <a class="w3-button" style="width:100%;" href="index.html">
         <h3 class="w3-padding-64 w3-center"><b>Alicia<br>Hofland</b></h3>
       </a>
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hide-large">CLOSE</a>
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
       <a href="collections.html" onclick="w3_close()" class="w3-bar-item w3-button">COLLECTIONS</a> 
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
       <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">AVAILABLE ART</a>
       <div class="w3-bar-item">
         <a href="https://www.instagram.com/aliciahofland" onclick="w3_close()" class="w3-button"><i
-            class="icon fa-instagram"></i>&nbsp;</a>
+            class="fab fa-2x fa-instagram"></i>&nbsp;</a>
         <a href="https://www.facebook.com/aliciahoflandart" onclick="w3_close()" class="w3-button"><i
-            class="icon fa-facebook"></i></a>
+            class="fab fa-2x fa-facebook"></i></a>
       </div>
     </nav>
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-      <span class="w3-left w3-padding">Alicia Hofland</span>
+      <a href="index.html"><span class="w3-left w3-padding">Alicia Hofland</span> </a>
       <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
     </header>
 
