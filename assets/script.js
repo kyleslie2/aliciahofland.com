@@ -41,28 +41,6 @@ $(function () {
       });
 
 
-    console.log('before parse!')
-
-    //var JSON = JSON.parse('./assets/config.json');
-    
-    var JSON = $.getJSON("assets/config.json", function (data) {})
-    
-    console.log('after parse')
-
-    console.log(JSON.index.image1)
-
-    //make easy config file for choosing which images appear in each square
-
-    //import settings from JSON
-    $('#image1').attr("src",JSON["index"].image1);
-    // $('#image2').attr("src",JSON["index"].image5);
-    // $('#image3').attr("src",JSON["index"].image5);
-    // $('#image4').attr("src",JSON["index"].image5);
-    // $('#image5').attr("src",JSON["index"].image5);
-    // $('#image6').attr("src",JSON["index"].image6);
-    // $('#image7').attr("src",JSON["index"].image7);
-    // $('#image8').attr("src",JSON["index"].image8);
-    // $('#image9').attr("src",JSON["index"].image9);
 })
 
 
