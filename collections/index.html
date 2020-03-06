@@ -22,15 +22,9 @@
 
         .w3-third img:hover {
             opacity: 0.8
-
         }
 
         .img_description {
-            /* position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0; */
             z-index:10;
             background: yellow;
             /* background: rgba(29, 106, 154, 0.72); */
@@ -41,41 +35,46 @@
             /* transition effect. not necessary */
             transition: opacity .2s, visibility .2s;
         }
-        /* .image_wrapper img:hover .img_description {
-            visibility: visible;
-            opacity: 1;
-        } */
-        /* .image_wrapper p {
-            visibility: hidden;
-        } */
     </style>
 </head>
 
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<body class="w3-light-grey w3-content" style="max-width:2000px">
 
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
         style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <a class="w3-button" style="width:100%;" href="../">
+        <a class="w3-button" style="width:100%;" href="../index.html">
             <h3 class="w3-padding-64 w3-center"><b>Alicia<br>Hofland</b></h3>
         </a>
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
-        <a href="/collections/" onclick="w3_close()" class="w3-bar-item w3-button active" active>COLLECTIONS</a>
+        <a id="collections_button" href="../collections/index.html" onclick="w3_close()" class="w3-bar-item w3-button active">COLLECTIONS</a>
+            <a href="../collections/available/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-right">> I don’t mean to Lie...</a>
+            <a href="../collections/available/index.html" onclick="w3_close()" class="w3-bar-item w3-button">>
+                    Portraits of Friends</a>
+            <a href="../collections/available/index.html" onclick="w3_close()" class="w3-bar-item w3-button">>
+                    After November</a>
+            <a href="../collections/available/index.html" onclick="w3_close()" class="w3-bar-item w3-button">>
+                    Works on Paper</a>
+            <a href="../collections/available/index.html" onclick="w3_close()" class="w3-bar-item w3-button">>
+                    Commissions</a>
+         <a href="../collections/available/index.html" onclick="w3_close()"
+                    class="w3-bar-item w3-button">AVAILABLE ART</a>
+
+        
         <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-        <a href="/collections/available.html" onclick="w3_close()" class="w3-bar-item w3-button">AVAILABLE ART</a>
         <div class="w3-bar-item">
-            <a href="https://www.instagram.com/aliciahofland" onclick="w3_close()" class="w3-button"><i
+            <a href="https://www.instagram.com/aliciahofland" class="w3-button"><i
                     class="fab fa-2x fa-instagram"></i>&nbsp;</a>
-            <a href="https://www.facebook.com/aliciahoflandart" onclick="w3_close()" class="w3-button"><i
+            <a href="https://www.facebook.com/aliciahoflandart" class="w3-button"><i
                     class="fab fa-2x fa-facebook"></i></a>
         </div>
     </nav>
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-        <a href="../"><span class="w3-left w3-padding">Alicia Hofland</span> </a>
+        <a href="../index.html"><span class="w3-left w3-padding">Alicia Hofland</span> </a>
         <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
     </header>
 
@@ -86,44 +85,35 @@
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:300px">
 
-        <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:83px"></div>
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
 
-       <!-- Photo grid -->
-       <div class="w3-row">
-           <div class="w3-third">
-               <a href="./1.html"><img id="image1" src="../images/home_preview/1_Sofie.jpg" style="width:100%"
-                       alt="A blue painting."></a>
-               <a href="./"><img id="image2" src="../images/home_preview/2_Sewn.jpeg" style="width:100%"
-                       alt="What a beautiful scenery this sunset"></a>
-               <a href="#"><img id="image3" src="../images/home_preview/3_Girls.jpg" style="width:100%"
-                       alt="The Beach. Me. Alone. Beautiful"></a>
-           </div>
-
-
-           <div class="w3-third">
-               <a href="#"><img id="image7" src="../images/home_preview/7_IDontMeanToLie.jpg" style="width:100%"
-                       alt="Canoeing again"></a>
-               <a href="#"><img id="image8" src="../images/home_preview/8_Sofie_detail1.jpg" style="width:100%"
-                       alt="A girl, and a train passing"></a>
-               <a href="#"><img id="image9" src="../images/home_preview/9_WarmBlue.jpeg" style="width:100%"
-                       alt="What a beautiful day!"></a>
+    <!-- Photo grid -->
+    <div class="w3-row">
+        <div class="w3-third">
+            <a href="./1.html"><img id="image1" src="../images/home_preview/1_Sofie.jpg" style="width:100%"
+                    alt="A blue painting."></a>
+            <a href="./"><img id="image2" src="../images/home_preview/2_Sewn.jpeg" style="width:100%"
+                    alt="What a beautiful scenery this sunset"></a>
+        </div>
+        <div class="w3-third">
+            <a href="#"><img id="image3" src="../images/home_preview/3_Girls.jpg" style="width:100%"
+                alt="The Beach. Me. Alone. Beautiful"></a>
+            <a href="#"><img id="image7" src="../images/home_preview/7_IDontMeanToLie.jpg" style="width:100%"
+                    alt="Canoeing again"></a>
+        </div>
+        <div class="w3-third">
+            <a href="#"><img id="image8" src="../images/home_preview/8_Sofie_detail1.jpg" style="width:100%"
+                    alt="A girl, and a train passing"></a>
+            <a href="#"><img id="image9" src="../images/home_preview/9_WarmBlue.jpeg" style="width:100%"
+                    alt="What a beautiful day!"></a>
            </div>
        </div>
 
         <!-- Pagination -->
         <div class="w3-center w3-padding-32">
             <a href="/collections/all/" onclick="w3_close()" class="w3-bar-item w3-button"
-                style="background-color:gray; padding-right:10%; padding-left:10%; color:white;">ALL COLLECTIONS</a>
-        </div>
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image">
-                <p id="caption"></p>
-            </div>
+                style="background-color:darkblue; padding-right:10%; padding-left:10%; color:white;">AVAILABLE ART</a>
         </div>
 
        <!-- About section -->
@@ -183,7 +173,7 @@
     </div>
     <script type="text/javascript" src="../assets/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../assets/script.js"></script>
-    <script type="text/javascript" src="../assets/collections.js.js"></script>
+    <script type="text/javascript" src="../assets/collections.js"></script>
 
 </body>
 

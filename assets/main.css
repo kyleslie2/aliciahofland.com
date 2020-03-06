@@ -18,3 +18,8 @@ html{
     margin-bottom:10rem;
     
 }
+
+.active{
+    background-color: #ccc !important;
+    color: black !important;
+}

@@ -14,4 +14,8 @@ $(function () {
     });
 
 
+    $("#btn")(function () {
+        $("#link").toggleClass("hovered");
+    });
+
 })
