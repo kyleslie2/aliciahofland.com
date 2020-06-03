@@ -1,11 +1,7 @@
 # TODO:
-- keep navbar on top at all times for desktop view? (shirk and shadow or no?)
-
-- portfolio section
-- main blog page
-- main lists page
-- uses page
-- movie app/ list
+- research using a CDN
+- lay out images on front page
+- Find spot for about and contact
 
 
 
