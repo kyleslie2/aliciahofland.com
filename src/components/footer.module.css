@@ -1,0 +1,21 @@
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #565656;
+    color: white;
+    text-align: center;
+    height:7rem;
+
+}
+
+.text{
+    color: white;
+    text-decoration: none;
+    padding-top:3rem;
+    margin-bottom: 0;
+}
+
+.text a{
+    color:aliceblue;
+}
