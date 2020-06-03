@@ -20,12 +20,12 @@ module.exports = {
     //     path: `${__dirname}/src/markdown-pages`,
     //   },
     // },
-     {
-       resolve: `gatsby-transformer-remark`,
-       options: {
-         plugins: [`gatsby-remark-autolink-headers`],
-       },
-     },
+    //  {
+    //    resolve: `gatsby-transformer-remark`,
+    //    options: {
+    //      plugins: [`gatsby-remark-autolink-headers`],
+    //    },
+    //  },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
