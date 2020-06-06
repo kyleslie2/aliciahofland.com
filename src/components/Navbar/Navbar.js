@@ -47,7 +47,7 @@ const Logo = styled.div `
   padding: 0.7rem 1vw 1vh 3vw; //top, right, bottom, left
   flex: 0 1 10rem;
   #logo{
-    font-size:2em;
+    font-size:1.9em;
   }
   
   @media(max-width: 768px) and (orientation: landscape) {
@@ -56,7 +56,7 @@ const Logo = styled.div `
     padding: 0.5rem 1vw 2vh 3vw;
 
     #logo{
-      font-size:2rem;
+      font-size:1.9rem;
     }
   }
 
@@ -67,7 +67,7 @@ const Logo = styled.div `
       margin 1vh 0;
 
     #logo{
-      font-size:1.8rem;
+      font-size:1.9rem;
     }
   }
 

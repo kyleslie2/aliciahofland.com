@@ -31,6 +31,12 @@ if (!image) {
     return null;
 }
 return (
+    <div
+        style={{
+            opacity: `50%`,
+            backgroundColor: `orange`,
+        }}
+    >
         <BackgroundImage
             fluid={image.childImageSharp.fluid}
             style={{
@@ -43,5 +49,6 @@ return (
                 alignItems: `center`,
             }}
         />
+    </div>
 );
 }
