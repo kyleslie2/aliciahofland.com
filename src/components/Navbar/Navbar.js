@@ -11,8 +11,8 @@ const Navigation = styled.nav`
   // height: 10vh; //good but tiny on high dpi mobile
   height: 3.5em;
   display: flex;
-  // background-color: #639; //navbar colour
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  background-color: #7271a3; //navbar colour
+  // background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
   position: relative;
   justify-content: space-between;
   border-bottom: 2px solid #33333320;

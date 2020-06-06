@@ -6,7 +6,9 @@
     color: white;
     text-align: center;
     height:7rem;
-
+    flex-shrink: 0;
+    position: absolute;
+    visibility: hidden;
 }
 
 .text{
@@ -17,5 +19,5 @@
 }
 
 .text a{
-    color:aliceblue;
+    color: aliceblue;
 }
