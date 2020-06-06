@@ -10,27 +10,24 @@ const Overlay = styled.div`
 
 const TextWrapper = styled.div`
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 `
 
 const H1 = styled.h1`
     color:white;
-    font-size:xxx-large;
-    // text-shadow: 3px 2px #000;
-    -webkit-text-stroke-width: 2.2px;
+    font-size:3.4rem;
+    -webkit-text-stroke-width: 0.12rem;
     -webkit-text-stroke-color: black;
     text-align:center;
-    padding-top: -5rem; 
     padding-bottom: 5rem;
 `
 
 const H2 = styled.h2`
     color:white;
-    font-size: xxx-large;
-    // text-shadow: 3px 2px #000;
-    -webkit-text-stroke-width: 2.2px;
+    font-size: 2.5rem;
+    -webkit-text-stroke-width: 0.11rem;
     -webkit-text-stroke-color: black;
     text-align:center;
     
