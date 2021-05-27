@@ -4,7 +4,7 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Alicia Hofland Art`,
+    siteTitleAlt: `Alicia Hofland's art portfolio`,
   },
   plugins: [
     {
@@ -14,7 +14,9 @@ module.exports = {
         navigation: [
           { name: `About`, slug: `/about` },
           { name: `Projects`, slug: `/projects` },
-          { name: `Instagram`, slug: `https://www.instagram.com/aliciahofland.art/` },
+          // { name: `For Sale`, slug: `/for-sale` },
+          { name: `Instagram`, slug: `https://instagram.com/aliciahofland.art` },
+          { name: `Facebook`, slug: `https://facebook.com/aliciahoflandart` },
         ],
       },
     },
@@ -34,9 +36,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Alicia Hofland Art`,
+        name: `Alicia Hofland's art portfolio`,
         short_name: `aliciahofland.art`,
-        description: `My art portfolio`,
+        description: `A collection of art created by Alicia Hofland`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#b75e09`,
