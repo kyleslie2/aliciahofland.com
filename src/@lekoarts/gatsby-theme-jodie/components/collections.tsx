@@ -11,7 +11,7 @@ import locales from "../locales"
 import { visuallyHidden } from "../styles/utils"
 
 type DataProps = {
-  projects: {
+  collections: {
     nodes: {
       shortTitle: string
       slug: string
@@ -20,11 +20,11 @@ type DataProps = {
   }
 }
 
-const Project: React.FC<PageProps<DataProps>> = ({ data: { projects }, location }) => (
+const Project: React.FC<PageProps<DataProps>> = ({ data: { collections }, location }) => (
   <Layout>
     <SEO title="Collections" pathname={location.pathname} />
     <h1 sx={visuallyHidden} data-testid="page-title">
-      {locales.projects}
+      {locales.collections}
     </h1>
     <div
       sx={{
@@ -33,15 +33,15 @@ const Project: React.FC<PageProps<DataProps>> = ({ data: { projects }, location 
         gridAutoRows: `50vw`,
       }}
     >
-      {projects.nodes.length > 0 ? (
-        projects.nodes.map((project) => (
+      {collections.nodes.length > 0 ? (
+        collections.nodes.map((project) => (
           <GridItem to={project.slug} key={project.slug} data-testid={project.shortTitle}>
             <Img fluid={project.cover.childImageSharp.fluid} />
             <span>{project.shortTitle}</span>
           </GridItem>
         ))
       ) : (
-        <div sx={{ padding: 3 }}>No collections found at the location defined for "projectsPath"</div>
+        <div sx={{ padding: 3 }}>No collections found at the location defined for "collectionsPath"</div>
       )}
     </div>
   </Layout>

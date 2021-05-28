@@ -4,7 +4,8 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Alicia Hofland's art portfolio`,
+    siteTitle: `aliciahofland.art`,
+    siteTitleAlt: `Alicia's art portfolio`,
   },
   plugins: [
     {
@@ -13,7 +14,7 @@ module.exports = {
       options: {
         navigation: [
           { name: `About`, slug: `/about` },
-          { name: `Projects`, slug: `/projects` },
+          { name: `Collections`, slug: `/projects` },
           // { name: `For Sale`, slug: `/for-sale` },
           { name: `Instagram`, slug: `https://instagram.com/aliciahofland.art` },
           { name: `Facebook`, slug: `https://facebook.com/aliciahoflandart` },
